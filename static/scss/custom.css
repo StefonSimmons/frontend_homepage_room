@@ -10673,9 +10673,33 @@ body {
   height: auto;
 }
 
+.my-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.menu-item {
+  list-style: none;
+  color: white;
+  font-size: 12px;
+  padding: 0 15px;
+}
+
 .block-1 {
   background-image: url("../images/desktop-image-hero-1.jpg");
   background-size: cover;
+  padding: 60px;
 }
 
 .block-2 {

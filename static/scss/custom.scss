@@ -14,7 +14,6 @@ body{
 }
 .top-row{
   height: 66.66vh;
-  
 }
 .bottom-row{
   height: 33.33vh;
@@ -22,9 +21,25 @@ body{
 .my-col{
   height: auto;
 }
+
+.my-nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.logo{
+  margin-right: 30px; 
+}
+.menu-item{
+  list-style: none;
+  color: $white;
+  font-size: 12px;
+  padding: 0 15px
+}
 .block-1{
   background-image: url('../images/desktop-image-hero-1.jpg');
   background-size: cover;
+  padding: 60px
 }
 .block-2{
   padding: 0 90px;

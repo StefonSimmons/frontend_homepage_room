@@ -11,7 +11,20 @@
 
 <body>
   <div class="row top-row">
-    <div class="col-6 my-col block-1"></div>
+    <div class="col-6 my-col block-1">
+      <div class="row no-gutters">
+        <div class="col my-nav">
+          <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
+          <nav class="my-nav">
+            <li class="menu-item">home</li>
+            <li class="menu-item">shop</li>
+            <li class="menu-item">about</li>
+            <li class="menu-item">contact</li>
+          </nav>
+        </div>
+      </div>
+      <!-- {{partial "nav_bar" .}} -->
+    </div>
     <div class="col d-flex flex-column justify-content-center my-col block-2">
       <h1 class="slide-header">{{.Params.slide_show.slide_1.slide_1_header}}</h1>
       <p class="slide-content">{{.Params.slide_show.slide_1.slide_1_content}}</p>
