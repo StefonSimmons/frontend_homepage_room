@@ -10696,6 +10696,24 @@ body {
   padding: 0 15px;
 }
 
+.carousel-nav {
+  background-color: black;
+  height: 14.28571%;
+  width: 25%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
 .block-1 {
   background-image: url("../images/desktop-image-hero-1.jpg");
   background-size: cover;
