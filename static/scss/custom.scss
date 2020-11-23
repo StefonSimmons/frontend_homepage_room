@@ -1,16 +1,66 @@
 $grid-columns: 10 !default;
+$dark-gray: hsl(0, 0%, 63%);
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$very-dark-gray: hsl(0, 0%, 27%);
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
 
 @import "../../node_modules/bootstrap/scss/bootstrap"; // bootstrap styles
 
 
+body{
+  font-family: 'Spartan', sans-serif;
+}
 .top-row{
   height: 66.66vh;
-  // border: solid 3px blue;
+  
 }
 .bottom-row{
   height: 33.33vh;
 }
 .my-col{
   height: auto;
-  border: 1px solid grey;
+}
+.block-1{
+  background-image: url('../images/desktop-image-hero-1.jpg');
+  background-size: cover;
+}
+.block-2{
+  padding: 0 90px;
+}
+.block-3{
+  background-image: url('../images/image-about-dark.jpg');
+}
+.block-4{
+  padding: 0 45px;
+}
+.block-5{
+  background-image: url('../images/image-about-light.jpg');
+}
+
+.slide-header{
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.slide-content{
+  font-size: 12px;
+  color: $dark-gray;
+  line-height: 2;
+  margin: 0;
+}
+
+.about-header{
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  margin-bottom: 15px;
+}
+.about-content{
+  font-size: 12px;
+  color: $dark-gray;
+  line-height: 2;
+  margin: 0;
 }
