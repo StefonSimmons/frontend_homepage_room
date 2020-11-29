@@ -10665,6 +10665,12 @@ body {
   height: 66.66vh;
 }
 
+@media (max-width: 992px) {
+  .top-row {
+    height: auto;
+  }
+}
+
 .bottom-row {
   height: 33.33vh;
 }
@@ -10689,20 +10695,188 @@ body {
   margin-right: 30px;
 }
 
+@media (max-width: 920px) {
+  .logo {
+    margin-right: 15px;
+  }
+}
+
 .menu-item {
   list-style: none;
   color: white;
   font-size: 12px;
   padding: 0 15px;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  color: #454545;
+}
+
+.block-1 {
+  background-image: url("../images/desktop-image-hero-1.jpg");
+  background-size: cover;
+  padding: 60px;
+}
+
+@media (max-width: 992px) {
+  .block-1 {
+    height: 400px;
+  }
+}
+
+.block-2 {
+  padding: 0 90px;
+}
+
+@media (max-width: 992px) {
+  .block-2 {
+    padding: 15px 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .block-2 {
+    padding: 90px;
+  }
+}
+
+@media (max-width: 460px) {
+  .block-2 {
+    padding: 45px;
+  }
+}
+
+.block-3 {
+  background-image: url("../images/image-about-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .block-3 {
+    height: 400px;
+  }
+}
+
+.block-4 {
+  padding: 0 45px;
+}
+
+@media (max-width: 992px) {
+  .block-4 {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .block-4 {
+    padding: 45px 90px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 460px) {
+  .block-4 {
+    padding: 45px;
+  }
+}
+
+.block-5 {
+  background-image: url("../images/image-about-light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 992px) {
+  .block-5 {
+    height: 400px;
+  }
+}
+
+.slide-header {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 992px) {
+  .slide-header {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slide-header {
+    font-size: 36px;
+  }
+}
+
+.slide-content {
+  font-size: 12px;
+  color: #a1a1a1;
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width: 576px) {
+  .slide-content {
+    font-size: 15px;
+  }
+}
+
+.shop-now-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.shop-now-nav:active {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+.shop-now {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-top: 13px;
+}
+
+@media (max-width: 992px) {
+  .shop-now {
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .shop-now {
+    font-size: 18px;
+    letter-spacing: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .shop-now {
+    letter-spacing: 5px;
+  }
 }
 
 .carousel-nav {
   background-color: black;
   height: 14.28571%;
-  width: 25%;
+  width: 16.66667%;
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: -16.66667%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10714,58 +10888,24 @@ body {
   padding: 0;
 }
 
-.block-1 {
-  background-image: url("../images/desktop-image-hero-1.jpg");
-  background-size: cover;
-  padding: 60px;
+@media (max-width: 1220px) {
+  .carousel-nav {
+    right: 0%;
+  }
 }
 
-.block-2 {
-  padding: 0 90px;
+.left {
+  background-color: #454545;
+  height: 100%;
 }
 
-.block-3 {
-  background-image: url("../images/image-about-dark.jpg");
+.arrow {
+  cursor: pointer;
 }
 
-.block-4 {
-  padding: 0 45px;
-}
-
-.block-5 {
-  background-image: url("../images/image-about-light.jpg");
-}
-
-.slide-header {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.slide-content {
-  font-size: 12px;
-  color: #a1a1a1;
-  line-height: 1.75;
-  margin: 0;
-}
-
-.shop-now-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.shop-now {
-  margin-top: 30px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.arrow:active {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
 }
 
 .about-header {
@@ -10776,10 +10916,22 @@ body {
   margin-bottom: 15px;
 }
 
+@media (max-width: 576px) {
+  .about-header {
+    font-size: 15px;
+  }
+}
+
 .about-content {
   font-size: 12px;
   color: #a1a1a1;
   line-height: 1.75;
   margin: 0;
+}
+
+@media (max-width: 576px) {
+  .about-content {
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

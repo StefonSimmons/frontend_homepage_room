@@ -11,7 +11,7 @@
 
 <body>
   <div class="row top-row">
-    <div class="col-6 my-col block-1">
+    <div class="col-lg-6 col-md-5 my-col block-1">
       <div class="row no-gutters">
         <div class="col my-nav">
           <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
@@ -23,9 +23,18 @@
           </nav>
         </div>
       </div>
-      <!-- {{partial "nav_bar" .}} -->
+      <div class="row">
+        <div class="col-lg my-col carousel-nav">
+          <span>
+            <img class='arrow' src="../images/icon-angle-left.svg" alt="left-nav">
+          </span>
+          <span>
+            <img class="arrow" src="../images/icon-angle-right.svg" alt="rigth-nav">
+          </span>
+        </div>
+      </div>
     </div>
-    <div class="col d-flex flex-column justify-content-center my-col block-2">
+    <div class="col-lg col-md-5 d-flex flex-column justify-content-center my-col block-2">
       <h1 class="slide-header">{{.Params.slide_show.slide_1.slide_1_header}}</h1>
       <p class="slide-content">{{.Params.slide_show.slide_1.slide_1_content}}</p>
       <div class='shop-now-nav'>
@@ -34,26 +43,15 @@
           <img src="../images/icon-arrow.svg" alt="next">
         </span>
       </div>
-      <div class="row">
-        <div class="col my-col carousel-nav">
-          <span>
-            <img src="../images/icon-angle-left.svg" alt="left-nav">
-          </span>
-          <span>
-            <img src="../images/icon-angle-right.svg" alt="rigth-nav">
-          </span>
-
-        </div>
-      </div>
     </div>
   </div>
   <div class="row bottom-row">
-    <div class="col my-col block-3"></div>
-    <div class="col-4 d-flex flex-column justify-content-center my-col block-4">
+    <div class="col-lg my-col block-3"></div>
+    <div class="col-lg-4 d-flex flex-column justify-content-center my-col block-4">
       <h2 class="about-header">{{.Params.about.about_header}}</h2>
       <p class="about-content">{{.Params.about.about_content}}</p>
     </div>
-    <div class="col my-col block-5"></div>
+    <div class="col-lg my-col block-5"></div>
   </div>
 </body>
 
