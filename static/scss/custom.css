@@ -10730,12 +10730,13 @@ body {
   list-style: none;
   color: white;
   font-size: 12px;
-  padding: 0 15px;
+  margin: 0 15px;
   cursor: pointer;
 }
 
 .menu-item:hover {
   color: #454545;
+  border-bottom: solid #454545 1px;
 }
 
 .block-1a {
@@ -10870,6 +10871,7 @@ body {
 .shop-now-nav:active {
   -webkit-transform: scale(0.94);
           transform: scale(0.94);
+  color: #a1a1a1;
 }
 
 .shop-now {
@@ -10898,6 +10900,24 @@ body {
   .shop-now {
     letter-spacing: 5px;
   }
+}
+
+.shop-now-arrow {
+  color: #a1a1a1;
+}
+
+.shop-now-arrow.inactive {
+  visibility: hidden;
+}
+
+.shop-now-arrow-active {
+  position: relative;
+  left: -50%;
+  visibility: hidden;
+}
+
+.shop-now-arrow-active.active {
+  visibility: visible;
 }
 
 .carousel-nav {

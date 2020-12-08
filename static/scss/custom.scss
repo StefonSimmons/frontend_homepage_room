@@ -61,10 +61,12 @@ body{
   list-style: none;
   color: $white;
   font-size: 12px;
-  padding: 0 15px;
+  margin: 0 15px;
   cursor: pointer;
   &:hover{
-    color: $very-dark-gray
+    color: $very-dark-gray;
+    border-bottom: solid $very-dark-gray 1px;
+
   }
 }
 
@@ -167,7 +169,8 @@ body{
   cursor: pointer;
 
   &:active{
-    transform: scale(.94)
+    transform: scale(.94);
+    color: $dark-gray;
   }
 }
 .shop-now{
@@ -186,6 +189,21 @@ body{
   }
   @media(max-width:460px){
     letter-spacing: 5px;
+  }
+}
+.shop-now-arrow{
+  color: $dark-gray;
+
+  &.inactive{
+    visibility: hidden;;
+  }
+}
+.shop-now-arrow-active{
+  position: relative;
+  left: -50%;
+  visibility: hidden;
+  &.active{
+    visibility: visible;
   }
 }
 .carousel-nav{

@@ -44,20 +44,8 @@
 
       <!-- CAROUSEL ITEM 1 -->
       <div class="row top-row carousel-item active">
-        <!-- BLOCK 1 -->
+        <!-- BLOCK 1 (IMAGE) -->
         <div class="col-lg-6 col-md-5 my-col block-1a">
-          <!-- <div class="row no-gutters">
-            {{partial "hamburger"}}
-            <div class="col my-nav main-nav">
-              <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
-              <nav class="my-nav">
-                <li class="menu-item">home</li>
-                <li class="menu-item">shop</li>
-                <li class="menu-item">about</li>
-                <li class="menu-item">contact</li>
-              </nav>
-            </div>
-          </div> -->
         </div>
         <!-- BLOCK 2  -->
         <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center my-col block-2">
@@ -67,6 +55,7 @@
             <h2 class="shop-now">Shop Now</h2>
             <span>
               <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
+              <img class="shop-now-arrow-active" src="../images/icon-arrow-active.svg" alt="next">
             </span>
           </div>
         </div>
@@ -74,20 +63,8 @@
 
       <!-- CAROUSEL ITEM 2 -->
       <div class="row top-row carousel-item">
-        <!-- BLOCK 1 -->
+        <!-- BLOCK 1 (IMAGE) -->
         <div class="col-lg-6 col-md-5 my-col block-1b">
-          <!-- <div class="row no-gutters">
-            {{partial "hamburger"}}
-            <div class="col my-nav main-nav">
-              <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
-              <nav class="my-nav">
-                <li class="menu-item">home</li>
-                <li class="menu-item">shop</li>
-                <li class="menu-item">about</li>
-                <li class="menu-item">contact</li>
-              </nav>
-            </div>
-          </div> -->
         </div>
         <!-- BLOCK 2  -->
         <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center my-col block-2">
@@ -97,6 +74,7 @@
             <h2 class="shop-now">Shop Now</h2>
             <span>
               <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
+              <img class="shop-now-arrow-active" src="../images/icon-arrow-active.svg" alt="next">
             </span>
           </div>
         </div>
@@ -104,20 +82,8 @@
 
       <!-- CAROUSEL ITEM 3 -->
       <div class="row top-row carousel-item">
-        <!-- BLOCK 1 -->
+        <!-- BLOCK 1 (IMAGE) -->
         <div class="col-lg-6 col-md-5 my-col block-1c">
-          <!-- <div class="row no-gutters">
-            {{partial "hamburger"}}
-            <div class="col my-nav main-nav">
-              <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
-              <nav class="my-nav">
-                <li class="menu-item">home</li>
-                <li class="menu-item">shop</li>
-                <li class="menu-item">about</li>
-                <li class="menu-item">contact</li>
-              </nav>
-            </div>
-          </div> -->
         </div>
         <!-- BLOCK 2  -->
         <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center my-col block-2">
@@ -125,8 +91,9 @@
           <p class="slide-content">{{.Params.slide_show.slide_3.slide_3_content}}</p>
           <div class='shop-now-nav'>
             <h2 class="shop-now">Shop Now</h2>
-            <span>
+            <span class='shop-arrows'>
               <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
+              <img class="shop-now-arrow-active" src="../images/icon-arrow-active.svg" alt="next">
             </span>
           </div>
         </div>
@@ -145,6 +112,29 @@
     </div>
     <div class="col-lg my-col block-5"></div>
   </div>
+  <script>
+    
+    const shopNowNav = document.querySelectorAll('.shop-now-nav')
+    
+    shopNowNav.forEach(nav =>{
+      const activeArrow = nav.querySelector('.shop-now-arrow-active')
+      const arrow = nav.querySelector('.shop-now-arrow')
+
+      nav.addEventListener('mousedown', () => {
+        activeArrow.classList.add('active')
+      })
+      nav.addEventListener('mouseup', () => {
+        activeArrow.classList.remove('active')
+      })
+      nav.addEventListener('mousedown', () => {
+        arrow.classList.add('inactive');
+      })
+      nav.addEventListener('mouseup', () => {
+        arrow.classList.remove('inactive');
+      })
+      console.log(nav)
+    })
+  </script>
 </body>
 
 </html>
