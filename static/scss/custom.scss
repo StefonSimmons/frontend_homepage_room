@@ -101,12 +101,7 @@ body{
   padding: 0 90px;
   @media(max-width: 992px){
     padding: 15px 45px;
-  }
-  @media(max-width:576px){
-    padding: 90px;
-  }
-  @media(max-width:460px){
-    padding: 45px;
+    min-height: 400px;
   }
 }
 .block-3{
@@ -123,11 +118,10 @@ body{
   box-sizing: border-box;
 
   @media(max-width: 992px){
-    height: 200px;
+    height: 400px;
   }
   @media(max-width:576px){
     padding: 45px 90px;
-    height: 400px;
   }
   @media(max-width:460px){
     padding: 45px;
@@ -153,7 +147,7 @@ body{
     font-size: 28px;
   }
   @media(max-width:576px){
-    font-size: 36px;
+    // font-size: 36px;
   }
 }
 .slide-content{
@@ -163,7 +157,7 @@ body{
   margin: 0;
 
   @media(max-width:576px){
-    font-size: 15px;
+    // font-size: 15px;
   }
 }
 .shop-now-nav{
@@ -206,9 +200,24 @@ body{
   align-items: center;
   padding: 30px;
   z-index: 2;
+
   @media(max-width: 1220px){
     right:40%;
     width: (100%/5);
+  }
+  @media(max-width: 992px){
+    right: 50%;
+  }
+  @media(max-width: 768px){
+    height: (100%/10);
+    bottom: 50%;
+    right: 0;
+  }
+  @media(max-width:576px){
+    width: (100%/4);
+  }
+  @media(max-width:460px){
+    width: (100%/3);
   }
 }
 
@@ -241,7 +250,7 @@ body{
   }
 }
 
-.logo-hamburger-container{
+.small-view-logo-container{
   display: flex;
 }
 .small-view-menu-bar{
