@@ -1,0 +1,57 @@
+
+.bottom-row{
+  height: 33.33vh;
+  margin: 0;
+
+  & .block-3{
+    background-image: url('../images/image-about-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    @media(max-width: 992px){
+      height: 400px;
+    }
+  }
+  & .block-4{
+    padding: 0 45px;
+    box-sizing: border-box;
+  
+    @media(max-width: 992px){
+      height: 400px;
+    }
+    @media(max-width:576px){
+      padding: 45px 90px;
+    }
+    @media(max-width:460px){
+      padding: 45px;
+    }
+
+    & .about-header{
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5.5px;
+      margin-bottom: 15px;
+    }
+    & .about-content{
+      font-size: 12px;
+      color: $dark-gray;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+  }
+  .block-5{
+    background-image: url('../images/image-about-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  
+    @media(max-width: 992px){
+      height: 400px;
+    }
+  }
+  
+  
+}
+

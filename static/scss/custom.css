@@ -10882,12 +10882,19 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel-item {
   margin-left: 0;
+  height: 66.66vh;
 }
 
 .carousel-item.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 992px) {
+  .carousel-item {
+    height: auto;
+  }
 }
 
 .carousel-item .block-1a {
@@ -11031,26 +11038,12 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
 }
 
-body {
-  font-family: 'Spartan', sans-serif;
-}
-
-.top-row {
-  height: 66.66vh;
-}
-
-@media (max-width: 992px) {
-  .top-row {
-    height: auto;
-  }
-}
-
 .bottom-row {
   height: 33.33vh;
   margin: 0;
 }
 
-.block-3 {
+.bottom-row .block-3 {
   background-image: url("../images/image-about-dark.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11059,36 +11052,51 @@ body {
 }
 
 @media (max-width: 992px) {
-  .block-3 {
+  .bottom-row .block-3 {
     height: 400px;
   }
 }
 
-.block-4 {
+.bottom-row .block-4 {
   padding: 0 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 @media (max-width: 992px) {
-  .block-4 {
+  .bottom-row .block-4 {
     height: 400px;
   }
 }
 
 @media (max-width: 576px) {
-  .block-4 {
+  .bottom-row .block-4 {
     padding: 45px 90px;
   }
 }
 
 @media (max-width: 460px) {
-  .block-4 {
+  .bottom-row .block-4 {
     padding: 45px;
   }
 }
 
-.block-5 {
+.bottom-row .block-4 .about-header {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  margin-bottom: 15px;
+}
+
+.bottom-row .block-4 .about-content {
+  font-size: 12px;
+  color: #a1a1a1;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.bottom-row .block-5 {
   background-image: url("../images/image-about-light.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11097,35 +11105,12 @@ body {
 }
 
 @media (max-width: 992px) {
-  .block-5 {
+  .bottom-row .block-5 {
     height: 400px;
   }
 }
 
-.about-header {
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 5.5px;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 576px) {
-  .about-header {
-    font-size: 15px;
-  }
-}
-
-.about-content {
-  font-size: 12px;
-  color: #a1a1a1;
-  line-height: 1.75;
-  margin: 0;
-}
-
-@media (max-width: 576px) {
-  .about-content {
-    font-size: 15px;
-  }
+body {
+  font-family: 'Spartan', sans-serif;
 }
 /*# sourceMappingURL=custom.css.map */
