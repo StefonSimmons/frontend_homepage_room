@@ -10,6 +10,8 @@ $very-dark-gray: hsl(0, 0%, 27%);
 
 @import "../scss/site_navigation/main-nav";
 @import "../scss/site_navigation/hamburger-nav";
+@import "../scss/carousel/carousel";
+@import "../scss/carousel/carousel-item";
 
 body{
   font-family: 'Spartan', sans-serif;
@@ -20,59 +22,12 @@ body{
     height: auto;
   }
 }
-// keep this. it changes the style of the top-row for carousel.
-.carousel-item{
-  margin-left: 0;
-
-  &.active{
-    display: flex;
-  }
-}
 
 .bottom-row{
   height: 33.33vh;
   margin: 0;
 }
-.my-col{
-  height: auto;
-}
 
-.block-1a{
-  background-image: url('../images/desktop-image-hero-1.jpg');
-  background-size: cover;
-  padding: 60px;
-
-  @media(max-width: 992px){
-    height: 400px;
-  }
-}
-
-.block-1b{
-  background-image: url('../images/desktop-image-hero-2.jpg');
-  background-size: cover;
-  padding: 60px;
-
-  @media(max-width: 992px){
-    height: 400px;
-  }
-}
-.block-1c{
-  background-image: url('../images/desktop-image-hero-3.jpg');
-  background-size: cover;
-  padding: 60px;
-
-  @media(max-width: 992px){
-    height: 400px;
-  }
-}
-
-.block-2{
-  padding: 0 90px;
-  @media(max-width: 992px){
-    padding: 15px 45px;
-    min-height: 400px;
-  }
-}
 .block-3{
   background-image: url('../images/image-about-dark.jpg');
   background-repeat: no-repeat;
@@ -107,124 +62,6 @@ body{
   }
 }
 
-.slide-header{
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 30px;
-
-  @media(max-width: 992px){
-    font-size: 28px;
-  }
-  @media(max-width:576px){
-    // font-size: 36px;
-  }
-}
-.slide-content{
-  font-size: 12px;
-  color: $dark-gray;
-  line-height: 1.75;
-  margin: 0;
-
-  @media(max-width:576px){
-    // font-size: 15px;
-  }
-}
-.shop-now-nav{
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-  cursor: pointer;
-
-  &:active{
-    transform: scale(.94);
-    color: $dark-gray;
-  }
-}
-.shop-now{
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  margin-top: 13px;
-  width: 55%;
-  @media(max-width: 992px){
-    letter-spacing: 5px;
-  }
-  @media(max-width:576px){
-    font-size: 18px;
-    letter-spacing: 10px;
-  }
-  @media(max-width:460px){
-    letter-spacing: 5px;
-  }
-}
-.shop-now-arrow{
-  color: $dark-gray;
-
-  &.inactive{
-    visibility: hidden;;
-  }
-}
-.shop-now-arrow-active{
-  position: relative;
-  left: -50%;
-  visibility: hidden;
-  &.active{
-    visibility: visible;
-  }
-}
-.carousel-nav-container{
-  background-color: $black;
-  height: (100%/8);
-  width: (100%/10);
-  position: absolute;
-  bottom: 0;
-  right: 30%;
-  display: flex;
-  align-items: center;
-  padding: 0px;
-  z-index: 2;
-
-  @media(max-width: 1220px){
-    right:40%;
-    width: (100%/5);
-  }
-  @media(max-width: 992px){
-    right: 50%;
-    width: (100%/10);
-  }
-  @media(max-width: 768px){
-    height: (100%/10);
-    width: (100%/5);
-    bottom: 50%;
-    right: 0;
-  }
-  @media(max-width:576px){
-    width: (100%/4);
-  }
-  @media(max-width:460px){
-    width: (100%/3);
-  }
-}
-
-.carousel-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  &:hover{
-    background-color: $very-dark-gray;
-  }
-}
-
-.arrow{
-  cursor: pointer;
-
-  &:active{
-    transform: scale(.94)
-  }
-}
 
 .about-header{
   font-size: 12px;
@@ -245,16 +82,4 @@ body{
   @media(max-width:576px){
     font-size: 15px;
   }
-}
-
-
-
-
-// leave here. fixes transition on carousel animation. 
-// class name applied briefly to .card-body / .carousel-item on transition to next card on carousel.
-.carousel-item-left{
-  display: flex;
-}
-.carousel-item-right{
-  display: flex;
 }
