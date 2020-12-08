@@ -10706,6 +10706,10 @@ a.text-dark:hover, a.text-dark:focus {
   border-bottom: solid white 2px;
 }
 
+.main-nav li {
+  list-style: none;
+}
+
 .small-view-menu-bar {
   display: none;
 }
@@ -10769,6 +10773,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: -ms-flexbox;
   display: flex;
   height: 15px;
+  margin-bottom: 0;
 }
 
 .small-view-menu-bar .hamburger-nav .hamburger-menu-item {
