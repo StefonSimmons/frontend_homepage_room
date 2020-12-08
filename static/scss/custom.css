@@ -10731,12 +10731,15 @@ body {
   color: white;
   font-size: 12px;
   margin: 0 15px;
+  padding-bottom: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 20px;
   cursor: pointer;
 }
 
 .menu-item:hover {
-  color: #454545;
-  border-bottom: solid #454545 1px;
+  border-bottom: solid white 2px;
 }
 
 .block-1a {
@@ -10920,7 +10923,7 @@ body {
   visibility: visible;
 }
 
-.carousel-nav {
+.carousel-nav-container {
   background-color: black;
   height: 12.5%;
   width: 10%;
@@ -10930,31 +10933,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
+  padding: 0px;
   z-index: 2;
 }
 
 @media (max-width: 1220px) {
-  .carousel-nav {
+  .carousel-nav-container {
     right: 40%;
     width: 20%;
   }
 }
 
 @media (max-width: 992px) {
-  .carousel-nav {
+  .carousel-nav-container {
     right: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  .carousel-nav {
+  .carousel-nav-container {
     height: 10%;
     bottom: 50%;
     right: 0;
@@ -10962,15 +10962,33 @@ body {
 }
 
 @media (max-width: 576px) {
-  .carousel-nav {
+  .carousel-nav-container {
     width: 25%;
   }
 }
 
 @media (max-width: 460px) {
-  .carousel-nav {
+  .carousel-nav-container {
     width: 33.33333%;
   }
+}
+
+.carousel-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.carousel-nav:hover {
+  background-color: #454545;
 }
 
 .arrow {
@@ -11051,14 +11069,17 @@ body {
   list-style: none;
   text-decoration: none;
   color: black;
+  padding-bottom: 15px;
+  height: 20px;
   font-size: 12px;
   font-weight: 700;
-  padding: 0 15px;
+  margin: 0 15px;
   cursor: pointer;
 }
 
 .hamburger-menu-item:hover {
   color: #454545;
+  border-bottom: solid #454545 2px;
 }
 
 .modal-header {

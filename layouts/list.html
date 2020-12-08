@@ -31,12 +31,16 @@
     </div>
     <!-- CAROUSEL NAV -->
     <div class="row">
-      <div class="col-lg my-col carousel-nav">
-        <a href='#carouselControls' data-slide="prev">
-          <img class='arrow' src="../images/icon-angle-left.svg" alt="left-nav">
+      <div class="col-lg my-col carousel-nav-container">
+        <a href='#carouselControls' class="carousel-nav" data-slide="prev">
+          <span>
+            <img class='arrow' src="../images/icon-angle-left.svg" alt="left-nav">
+          </span>
         </a>
-        <a href='#carouselControls' data-slide="next">
-          <img class='arrow' src="../images/icon-angle-right.svg" alt="right-nav">
+        <a href='#carouselControls' class="carousel-nav" data-slide="next">
+          <span>
+            <img class='arrow' src="../images/icon-angle-right.svg" alt="right-nav">
+          </span>
         </a>
       </div>
     </div>
@@ -113,10 +117,10 @@
     <div class="col-lg my-col block-5"></div>
   </div>
   <script>
-    
+
     const shopNowNav = document.querySelectorAll('.shop-now-nav')
-    
-    shopNowNav.forEach(nav =>{
+
+    shopNowNav.forEach(nav => {
       const activeArrow = nav.querySelector('.shop-now-arrow-active')
       const arrow = nav.querySelector('.shop-now-arrow')
 
