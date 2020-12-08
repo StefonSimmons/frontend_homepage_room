@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- javaScript for accordian -->
+  <!-- javascript for carousel -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- javascript for shop now arrow-->
+  <script defer src="../script.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="../scss/custom.css">
   <title>{{.Params.Header}}</title>
@@ -16,18 +18,10 @@
 
 <body>
   <div id="carouselControls" class="carousel slide" data-ride="carousel">
-    <!-- NAV BAR -->
+    <!-- NAV BARS -->
     <div class="row no-gutters">
-      {{partial "hamburger"}}
-      <div class="col my-nav main-nav">
-        <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
-        <nav class="my-nav">
-          <li class="menu-item">home</li>
-          <li class="menu-item">shop</li>
-          <li class="menu-item">about</li>
-          <li class="menu-item">contact</li>
-        </nav>
-      </div>
+      {{partial "hamburger_nav"}}
+      {{partial "main_nav"}}
     </div>
     <!-- CAROUSEL NAV -->
     <div class="row">
@@ -45,69 +39,12 @@
       </div>
     </div>
     <div class="carousel-inner">
-
-      <!-- CAROUSEL ITEM 1 -->
-      <div class="row top-row carousel-item active">
-        <!-- BLOCK 1 (IMAGE) -->
-        <div class="col-lg-6 col-md-5 my-col block-1a">
-        </div>
-        <!-- BLOCK 2  -->
-        <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center my-col block-2">
-          <h1 class="slide-header">{{.Params.slide_show.slide_1.slide_1_header}}</h1>
-          <p class="slide-content">{{.Params.slide_show.slide_1.slide_1_content}}</p>
-          <div class='shop-now-nav'>
-            <h2 class="shop-now">Shop Now</h2>
-            <span>
-              <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
-              <img class="shop-now-arrow-active" src="../images/icon-arrow-active.svg" alt="next">
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- CAROUSEL ITEM 2 -->
-      <div class="row top-row carousel-item">
-        <!-- BLOCK 1 (IMAGE) -->
-        <div class="col-lg-6 col-md-5 my-col block-1b">
-        </div>
-        <!-- BLOCK 2  -->
-        <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center my-col block-2">
-          <h1 class="slide-header">{{.Params.slide_show.slide_2.slide_2_header}}</h1>
-          <p class="slide-content">{{.Params.slide_show.slide_2.slide_2_content}}</p>
-          <div class='shop-now-nav'>
-            <h2 class="shop-now">Shop Now</h2>
-            <span>
-              <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
-              <img class="shop-now-arrow-active" src="../images/icon-arrow-active.svg" alt="next">
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- CAROUSEL ITEM 3 -->
-      <div class="row top-row carousel-item">
-        <!-- BLOCK 1 (IMAGE) -->
-        <div class="col-lg-6 col-md-5 my-col block-1c">
-        </div>
-        <!-- BLOCK 2  -->
-        <div class="col-lg-4 col-md-5 d-flex flex-column justify-content-center my-col block-2">
-          <h1 class="slide-header">{{.Params.slide_show.slide_3.slide_3_header}}</h1>
-          <p class="slide-content">{{.Params.slide_show.slide_3.slide_3_content}}</p>
-          <div class='shop-now-nav'>
-            <h2 class="shop-now">Shop Now</h2>
-            <span class='shop-arrows'>
-              <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
-              <img class="shop-now-arrow-active" src="../images/icon-arrow-active.svg" alt="next">
-            </span>
-          </div>
-        </div>
-      </div>
+      {{partial "carousel_items/carousel_item_one.html" .}}
+      {{partial "carousel_items/carousel_item_two.html" .}}
+      {{partial "carousel_items/carousel_item_three.html" .}}
     </div>
-
-
   </div>
-
-  </div>
+  <!-- BOTTOM BLOCKS (3) -->
   <div class="row bottom-row">
     <div class="col-lg my-col block-3"></div>
     <div class="col-lg-4 d-flex flex-column justify-content-center my-col block-4">
@@ -116,29 +53,6 @@
     </div>
     <div class="col-lg my-col block-5"></div>
   </div>
-  <script>
-
-    const shopNowNav = document.querySelectorAll('.shop-now-nav')
-
-    shopNowNav.forEach(nav => {
-      const activeArrow = nav.querySelector('.shop-now-arrow-active')
-      const arrow = nav.querySelector('.shop-now-arrow')
-
-      nav.addEventListener('mousedown', () => {
-        activeArrow.classList.add('active')
-      })
-      nav.addEventListener('mouseup', () => {
-        activeArrow.classList.remove('active')
-      })
-      nav.addEventListener('mousedown', () => {
-        arrow.classList.add('inactive');
-      })
-      nav.addEventListener('mouseup', () => {
-        arrow.classList.remove('inactive');
-      })
-      console.log(nav)
-    })
-  </script>
 </body>
 
 </html>
