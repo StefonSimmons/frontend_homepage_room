@@ -13,5 +13,9 @@ slide_show:
   slide_2:
     slide_2_header: "We are available all across the globe"
     slide_2_content: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
+  slide_3:
+    slide_3_header: "Manufactured with the best materials"
+    slide_3_content: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
+
 ---
 

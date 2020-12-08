@@ -10671,6 +10671,12 @@ body {
   }
 }
 
+.carousel-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .bottom-row {
   height: 33.33vh;
 }
@@ -10719,16 +10725,28 @@ body {
   color: #454545;
 }
 
-.block-1 {
+.block-1a {
   background-image: url("../images/desktop-image-hero-1.jpg");
   background-size: cover;
   padding: 60px;
 }
 
 @media (max-width: 992px) {
-  .block-1 {
+  .block-1a {
     height: 400px;
   }
+}
+
+.block-1b {
+  background-image: url("../images/desktop-image-hero-2.jpg");
+  background-size: cover;
+  padding: 60px;
+}
+
+.block-1c {
+  background-image: url("../images/desktop-image-hero-3.jpg");
+  background-size: cover;
+  padding: 60px;
 }
 
 .block-2 {
@@ -10890,18 +10908,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
+  padding: 15px;
+  z-index: 2;
 }
 
 @media (max-width: 1220px) {
   .carousel-nav {
     right: 0%;
   }
-}
-
-.left {
-  background-color: #454545;
-  height: 100%;
 }
 
 .arrow {
@@ -11022,5 +11036,17 @@ body {
     width: 100%;
     height: 100%;
   }
+}
+
+.carousel-item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel-item-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=custom.css.map */

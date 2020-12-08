@@ -15,41 +15,133 @@
 </head>
 
 <body>
-  <div class="row top-row">
-    <div class="col-lg-6 col-md-5 my-col block-1">
-      <div class="row no-gutters">
-        {{partial "hamburger"}}
-        <div class="col my-nav main-nav">
-          <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
-          <nav class="my-nav">
-            <li class="menu-item">home</li>
-            <li class="menu-item">shop</li>
-            <li class="menu-item">about</li>
-            <li class="menu-item">contact</li>
-          </nav>
+  <div id="carouselControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- CAROUSEL ITEM 1 -->
+      <div class="row top-row carousel-item active">
+        <!-- BLOCK 1 -->
+        <div class="col-lg-6 col-md-5 my-col block-1a">
+          <div class="row no-gutters">
+            {{partial "hamburger"}}
+            <div class="col my-nav main-nav">
+              <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
+              <nav class="my-nav">
+                <li class="menu-item">home</li>
+                <li class="menu-item">shop</li>
+                <li class="menu-item">about</li>
+                <li class="menu-item">contact</li>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg my-col carousel-nav">
+              <a href='#carouselControls' data-slide="prev">
+                <img class='arrow' src="../images/icon-angle-left.svg" alt="left-nav">
+              </a>
+              <a href='#carouselControls' data-slide="next">
+                <img class='arrow' src="../images/icon-angle-right.svg" alt="right-nav">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- BLOCK 2  -->
+        <div class="col-lg col-md-5 d-flex flex-column justify-content-center my-col block-2">
+          <h1 class="slide-header">{{.Params.slide_show.slide_1.slide_1_header}}</h1>
+          <p class="slide-content">{{.Params.slide_show.slide_1.slide_1_content}}</p>
+          <div class='shop-now-nav'>
+            <h2 class="shop-now">Shop Now</h2>
+            <span>
+              <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
+            </span>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg my-col carousel-nav">
-          <span>
-            <img class='arrow' src="../images/icon-angle-left.svg" alt="left-nav">
-          </span>
-          <span>
-            <img class="arrow" src="../images/icon-angle-right.svg" alt="rigth-nav">
-          </span>
+
+      <!-- CAROUSEL ITEM 2 -->
+      <div class="row top-row carousel-item">
+        <!-- BLOCK 1 -->
+        <div class="col-lg-6 col-md-5 my-col block-1b">
+          <div class="row no-gutters">
+            {{partial "hamburger"}}
+            <div class="col my-nav main-nav">
+              <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
+              <nav class="my-nav">
+                <li class="menu-item">home</li>
+                <li class="menu-item">shop</li>
+                <li class="menu-item">about</li>
+                <li class="menu-item">contact</li>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg my-col carousel-nav">
+              <a href='#carouselControls' data-slide="prev">
+                <img class='arrow' src="../images/icon-angle-left.svg" alt="left-nav">
+              </a>
+              <a href='#carouselControls' data-slide="next">
+                <img class='arrow' src="../images/icon-angle-right.svg" alt="right-nav">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- BLOCK 2  -->
+        <div class="col-lg col-md-5 d-flex flex-column justify-content-center my-col block-2">
+          <h1 class="slide-header">{{.Params.slide_show.slide_2.slide_2_header}}</h1>
+          <p class="slide-content">{{.Params.slide_show.slide_2.slide_2_content}}</p>
+          <div class='shop-now-nav'>
+            <h2 class="shop-now">Shop Now</h2>
+            <span>
+              <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAROUSEL ITEM 3 -->
+      <div class="row top-row carousel-item">
+        <!-- BLOCK 1 -->
+        <div class="col-lg-6 col-md-5 my-col block-1c">
+          <div class="row no-gutters">
+            {{partial "hamburger"}}
+            <div class="col my-nav main-nav">
+              <img class="navbar-brand logo" src="../images/logo.svg" alt="room">
+              <nav class="my-nav">
+                <li class="menu-item">home</li>
+                <li class="menu-item">shop</li>
+                <li class="menu-item">about</li>
+                <li class="menu-item">contact</li>
+              </nav>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg my-col carousel-nav">
+              <a href='#carouselControls' data-slide="prev">
+                <img class='arrow' src="../images/icon-angle-left.svg" alt="left-nav">
+              </a>
+              <a href='#carouselControls' data-slide="next">
+                <img class='arrow' src="../images/icon-angle-right.svg" alt="right-nav">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- BLOCK 2  -->
+        <div class="col-lg col-md-5 d-flex flex-column justify-content-center my-col block-2">
+          <h1 class="slide-header">{{.Params.slide_show.slide_3.slide_3_header}}</h1>
+          <p class="slide-content">{{.Params.slide_show.slide_3.slide_3_content}}</p>
+          <div class='shop-now-nav'>
+            <h2 class="shop-now">Shop Now</h2>
+            <span>
+              <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
+            </span>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-lg col-md-5 d-flex flex-column justify-content-center my-col block-2">
-      <h1 class="slide-header">{{.Params.slide_show.slide_1.slide_1_header}}</h1>
-      <p class="slide-content">{{.Params.slide_show.slide_1.slide_1_content}}</p>
-      <div class='shop-now-nav'>
-        <h2 class="shop-now">Shop Now</h2>
-        <span>
-          <img class="shop-now-arrow" src="../images/icon-arrow.svg" alt="next">
-        </span>
-      </div>
-    </div>
+
+
+  </div>
+
   </div>
   <div class="row bottom-row">
     <div class="col-lg my-col block-3"></div>

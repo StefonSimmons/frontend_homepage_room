@@ -18,15 +18,18 @@ body{
     height: auto;
   }
 }
+// keep this. it changes the style of the top-row for carousel.
+.carousel-item{
+  &.active{
+    display: flex;
+  }
+}
+
 .bottom-row{
   height: 33.33vh;
 }
 .my-col{
   height: auto;
-  // border: solid blue 1px
-  @media(max-width: 992px){
-    // height: 100%
-  }
 }
 .my-nav{
   display: flex;
@@ -57,7 +60,7 @@ body{
   }
 }
 
-.block-1{
+.block-1a{
   background-image: url('../images/desktop-image-hero-1.jpg');
   background-size: cover;
   padding: 60px;
@@ -66,6 +69,18 @@ body{
     height: 400px;
   }
 }
+
+.block-1b{
+  background-image: url('../images/desktop-image-hero-2.jpg');
+  background-size: cover;
+  padding: 60px;
+}
+.block-1c{
+  background-image: url('../images/desktop-image-hero-3.jpg');
+  background-size: cover;
+  padding: 60px;
+}
+
 .block-2{
   padding: 0 90px;
   @media(max-width: 992px){
@@ -169,16 +184,13 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0;
+  padding: 15px;
+  z-index: 2;
   @media(max-width: 1220px){
     right:0%
   }
 }
-.left{
-  background-color: $very-dark-gray;
-  height: 100%;
 
-}
 .arrow{
   cursor: pointer;
 
@@ -269,4 +281,13 @@ body{
   width:100%;
   height: 100%;
   }
+}
+
+// leave here. fixes transition on carousel animation. 
+// class name applied briefly to .card-body / .carousel-item on transition to next card on carousel.
+.carousel-item-left{
+  display: flex;
+}
+.carousel-item-right{
+  display: flex;
 }
