@@ -10880,10 +10880,10 @@ body {
 .shop-now {
   font-size: 12px;
   font-weight: 500;
-  letter-spacing: 10px;
+  letter-spacing: 6px;
   text-transform: uppercase;
   margin-top: 13px;
-  margin-right: 15%;
+  width: 55%;
 }
 
 @media (max-width: 992px) {
@@ -10950,12 +10950,14 @@ body {
 @media (max-width: 992px) {
   .carousel-nav-container {
     right: 50%;
+    width: 10%;
   }
 }
 
 @media (max-width: 768px) {
   .carousel-nav-container {
     height: 10%;
+    width: 20%;
     bottom: 50%;
     right: 0;
   }
