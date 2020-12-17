@@ -11118,4 +11118,13 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Spartan', sans-serif;
 }
+
+.dev-info-btn {
+  border: black solid 2px;
+  background: #a1a1a1;
+}
+
+.dev-info-btn:hover {
+  background-color: #cac1c1;
+}
 /*# sourceMappingURL=custom.css.map */

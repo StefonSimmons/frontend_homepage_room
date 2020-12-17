@@ -1,4 +1,5 @@
 
+// SHOP NOW ARROW
 const shopNowNav = document.querySelectorAll('.shop-now-nav')
 
 shopNowNav.forEach(nav => {
@@ -17,4 +18,16 @@ shopNowNav.forEach(nav => {
   nav.addEventListener('mouseup', () => {
     arrow.classList.remove('inactive');
   })
+})
+
+// DEV-INFO
+
+const devInfoBtn = document.querySelector('.dev-info-btn')
+const devInfo = document.querySelector('.dev-info')
+
+devInfo.style.display = "none"
+devInfoBtn.addEventListener('click', () => {
+  devInfo.style.display = "block"
+  devInfo.style.margin = "10px"
+  devInfoBtn.style.display = "none"
 })

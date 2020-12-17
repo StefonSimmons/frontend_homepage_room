@@ -1,3 +1,4 @@
 /node_modules
 /z-instructions
 .DS_Store
+/public

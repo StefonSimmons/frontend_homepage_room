@@ -18,4 +18,15 @@ $very-dark-gray: hsl(0, 0%, 27%);
 
 body{
   font-family: 'Spartan', sans-serif;
+  // height: 400vh;
+}
+
+.dev-info-btn{
+  // position: absolute;
+  // bottom: 0;
+  border: black solid 2px;
+  background: $dark-gray;
+  &:hover{
+    background-color: rgb(202, 193, 193);
+  }
 }
