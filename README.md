@@ -13,6 +13,9 @@ A solution to a [Frontend Mentor](https://www.frontendmentor.io/) challenge. Imp
 
 * ["Room" Grid - (https://frontend-room.vercel.app/)](https://frontend-room.vercel.app/)
 
+## Deployed to AWS CloudFront
+* ["Room" Grid - (http://d3jqefpza7ezsc.cloudfront.net/)](http://d3jqefpza7ezsc.cloudfront.net/)
+
 <br/>
 
 <img src="https://media.giphy.com/media/3o6Ztii5zyvIqhoKQw/giphy.gif" alt='floating plant' style="height: 200px"/>
