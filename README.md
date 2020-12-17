@@ -14,7 +14,9 @@ A solution to a [Frontend Mentor](https://www.frontendmentor.io/) challenge. Imp
 * ["Room" Grid - (https://frontend-room.vercel.app/)](https://frontend-room.vercel.app/)
 
 ## Deployed to AWS CloudFront
+
 * ["Room" Grid - (http://d3jqefpza7ezsc.cloudfront.net/)](http://d3jqefpza7ezsc.cloudfront.net/)
+* [How I deployed to CloudFront - (my medium post)](https://medium.com/@stefonsimmons1/guide-to-deploy-hugo-to-aws-cloudfront-260b780d8f79)
 
 <br/>
 
