@@ -16,6 +16,8 @@ A solution to a [Frontend Mentor](https://www.frontendmentor.io/) challenge. Imp
 ## Deployed to AWS CloudFront
 
 * ["Room" Grid - (http://d3jqefpza7ezsc.cloudfront.net/)](http://d3jqefpza7ezsc.cloudfront.net/)
+
+## How to Deploy to AWS CloudFront Article 
 * [How I deployed to CloudFront - (my medium post)](https://medium.com/@stefonsimmons1/guide-to-deploy-hugo-to-aws-cloudfront-260b780d8f79)
 
 <br/>
